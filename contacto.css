@@ -113,4 +113,22 @@ h2 {
 #contacto li a:hover {
     text-decoration: underline;
 }
+}
+.lista-social {
+  list-style: none; /* Oculta las viñetas de la lista */
+  padding: 0; /* Elimina el padding predeterminado de la lista */
+  display: flex; /* Permite que los elementos de la lista se alineen en fila */
+  gap: 9px; /* Añade espacio entre los elementos de la lista */
+}
+
+.enlace-social {
+  display: flex; /* Convierte el enlace en un contenedor flexible */
+  align-items: center; /* Alinea verticalmente el icono y el texto en el centro */
+  text-decoration: none; /* Opcional: quita el subrayado de los enlaces */
+  color: inherit; /* Opcional: hereda el color del texto */
+}
+
+.enlace-social img {
+  margin-right: 1px; /* Añade un pequeño margen a la derecha de la imagen para separarla del texto */
+}
 

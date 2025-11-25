@@ -146,5 +146,67 @@ footer {
         font-size: 2rem;
     }
 }
+/* Estilos generales de la sección */
+.equipo {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fondo suave para resaltar la sección */
+}
+
+.equipo h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenedor principal que usa Flexbox para alinear las fichas */
+.contenedor-equipo {
+    display: flex;
+    justify-content: center; /* Centra las fichas horizontalmente */
+    gap: 20px; /* Espacio entre las fichas */
+    flex-wrap: wrap; /* Permite que las fichas salten a la siguiente línea en pantallas pequeñas */
+}
+
+/* Estilos para cada ficha individual de miembro */
+.miembro-equipo {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px; /* Ancho fijo para cada tarjeta */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.miembro-equipo:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+/* Estilos para la imagen del miembro */
+.miembro-equipo img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la foto sea redonda */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    margin-bottom: 15px;
+    width: 150px; /* Tamaño específico para la foto redonda */
+    height: 150px;
+}
+
+/* Estilos para el rol y la descripción */
+.miembro-equipo h3 {
+    margin: 0 0 5px 0;
+    color: #0056b3; /* Color que coincida con tu paleta */
+}
+
+.miembro-equipo .rol {
+    font-style: italic;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.miembro-equipo .descripcion {
+    font-size: 0.9em;
+    color: #444;
+}
 
 

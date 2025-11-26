@@ -1,15 +1,18 @@
-/* --- Estilos Generales para el Header y Footer (Básicos) --- */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4; /* Fondo general claro */
+    background-color: #f4f4f4; 
+    background-image: url('https://plus.unsplash.com/premium_photo-1682125235036-d1ab54136ff4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdG98ZW58MHx8MHx8fDA%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
 }
 
 header {
-    background-color: #007bff; /* Color principal para la barra de navegación */
+    background-color: #007bff; 
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -52,16 +55,16 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px; /* Separa el footer del contenido principal */
+    margin-top: 40px; 
 }
 
 
-/* --- Estilos para la Sección de Contacto --- */
+
 #contacto {
-    max-width: 800px; /* Limita el ancho del contenido */
-    margin: 40px auto; /* Centra la sección en la página */
+    max-width: 800px; 
+    margin: 40px auto;
     padding: 20px;
-    background-color: #fff; /* Fondo blanco para la sección */
+    background-color: #fff; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -80,55 +83,69 @@ h2 {
     color: #555;
 }
 
-/* Estilos para las listas de información (dirección, teléfono, etc.) */
+
 #contacto ul {
-    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    list-style-type: none; 
     padding: 0;
     margin-bottom: 20px;
 }
 
 #contacto li {
     margin-bottom: 15px;
-    /* Opcional: añade un icono o un borde para que se vea más ordenado */
+    
     padding-left: 30px; 
     position: relative;
 }
 
 #contacto li strong {
     color: #333;
-    display: block; /* Mantiene el título fuerte en su propia línea */
+    display: block; 
     margin-bottom: 3px;
 }
 
 #contacto li p {
-    margin: 0; /* Elimina el margen predeterminado de los párrafos dentro de la lista */
+    margin: 0; 
     color: #666;
 }
 
 #contacto li a {
-    color: #007bff; /* Color de los enlaces (email, redes sociales) */
+    color: #007bff; 
     text-decoration: none;
 }
 
 #contacto li a:hover {
     text-decoration: underline;
 }
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px;
+    align-items: center;
+    
 }
 .lista-social {
-  list-style: none; /* Oculta las viñetas de la lista */
-  padding: 0; /* Elimina el padding predeterminado de la lista */
-  display: flex; /* Permite que los elementos de la lista se alineen en fila */
-  gap: 9px; /* Añade espacio entre los elementos de la lista */
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  gap: 9px; 
 }
 
 .enlace-social {
-  display: flex; /* Convierte el enlace en un contenedor flexible */
-  align-items: center; /* Alinea verticalmente el icono y el texto en el centro */
-  text-decoration: none; /* Opcional: quita el subrayado de los enlaces */
-  color: inherit; /* Opcional: hereda el color del texto */
+  display: flex; 
+  align-items: center; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .enlace-social img {
-  margin-right: 1px; /* Añade un pequeño margen a la derecha de la imagen para separarla del texto */
+  margin-right: 1px; 
 }
-
+.ubicacion-epsi {
+    margin-right: 50%;
+}
+.iconos {
+    padding: 0; 
+    list-style: none; 
+  gap: 9px; 
+}

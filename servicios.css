@@ -1,21 +1,19 @@
-/* --- Estilos Generales para las Secciones --- */
-/* Un contenedor básico para centrar el contenido y limitar su ancho */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilo para los títulos principales de sección */
+
 h2 {
     text-align: center;
     color: #333;
     margin-bottom: 10px;
-    border-bottom: 2px solid #007bff; /* Color de acento, puedes cambiarlo */
+    border-bottom: 2px solid #007bff; 
     padding-bottom: 10px;
 }
 
-/* --- Estilos para la Sección de Servicios --- */
+
 #servicios {
     background-color: #d1d1d1;
     padding: 40px 0;
@@ -27,7 +25,6 @@ h2 {
     color: #666;
 }
 
-/* Estilo para las tarjetas individuales de servicio */
 .service-card {
     background-color: #fff;
     border-radius: 8px;
@@ -38,11 +35,11 @@ h2 {
 }
 
 .service-card:hover {
-    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+    transform: translateY(-5px); 
 }
 
 .service-card h3 {
-    color: #007bff; /* Color del título de la tarjeta */
+    color: #007bff; 
     margin-top: 0;
 }
 
@@ -50,15 +47,15 @@ h2 {
     color: #444;
 }
 
-/* Opcional: Usar Flexbox para mostrar las tarjetas en columnas en pantallas grandes */
+
 @media (min-width: 768px) {
     #servicios .container {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Espacio entre las tarjetas */
+        gap: 20px; 
     }
     .service-card {
-        flex: 1 1 calc(50% - 20px); /* Ocupa la mitad del ancho menos el espacio del gap */
+        flex: 1 1 calc(50% - 20px); 
         max-width: calc(50% - 20px);
     }
 }
@@ -69,6 +66,10 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBkZSUyMGNvbG9yZXN8ZW58MHx8MHx8fDA%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
 }
 img {
   max-width: 100%
@@ -92,13 +93,13 @@ img {
 
 header {
     background: #007bff;
-    color: #333;
-    padding: 10px 0;
+    color: #fff;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%; /* Añade un poco de margen a los lados */
+    padding: 10px 5%; 
 }
 
 .logo-container {
@@ -121,7 +122,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #333;
+    color: #ffff;
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s;
@@ -133,12 +134,12 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* --- Estilos de la Sección Principal (Hero) --- */
+
 .hero-section {
     text-align: center;
     padding: 60px 20px;
     background: #e9ecef;
-    margin: 20px 5%; /* Centra la sección y da margen */
+    margin: 20px 5%; 
     border-radius: 8px;
 }
 
@@ -163,9 +164,9 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Estilos del Botón de Llamada a la Acción --- */
+
 button {
-    background-color: #0056b3; /* Color verde para el éxito/acción */
+    background-color: #0056b3; 
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -179,7 +180,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* --- Estilos del Pie de Página (Opcional) --- */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -188,7 +188,6 @@ footer {
     margin-top: 40px;
 }
 
-/* --- Media Queries (Responsividad básica) --- */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

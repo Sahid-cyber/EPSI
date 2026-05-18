@@ -1,0 +1,218 @@
+Proceso biblioteca
+	definir lunes, martes, miecoles, jueves, viernes Como Caracter;
+	definir carga, librosVendidos, tipoDia, tipoMomento, NADAvendido, LibrosVendidosSumado, LibrosTotal, maniana, tarde, noche, CeroVendido, DiasContados Como Entero;
+	escribir "-- Ingresos del daia a dia de os empleadosd e la biblioteca --";
+	escribir "Ingrese valor 1 para que comience... (Cualquier caracter saldra ERROR)";
+	leer carga;
+	si carga <> 1 Entonces
+		escribir "El numero no fue ingresado el numero 1, si vuelve hacer de nuevo, si comote el mismo error, el sistema dará ERROR o se cierrará...";
+		leer carga;
+	FinSi
+	mientras carga <> -1 hacer 
+		escribir "¿Que dia trabajo? debe ingresar la opcion correspondiente en numeros naturales";
+		escribir "-1 Lunes, -2 Martes, -3 Miercoles, -4 Jueves, -5 Viernes...";
+		leer tipoDia;
+		segun tipoDia hacer
+			1: escribir "Trabajo en el dia Lunes, ¿En que parte del dia vendio?";
+				escribir "-1 Mañana, -2 Tarde, -3 Noche...";
+				leer tipoMomento;
+				segun tipoMomento Hacer
+					1: escribir "Trabajo en el dia Lunes, trabajo en el horario mañana";
+						maniana <- maniana + 1;
+						escribir "Trabajo en el dia Lunes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Lunes, en el horario de la mañana Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Lunes, del horario de la mañana, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					2: escribir "Trabajo en el dia Lunes, trabajo en el horario tarde";
+						tarde <- tarde + 1;
+						escribir "Trabajo en el dia Lunes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Lunes, en el horario de la tarde Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Lunes, del horario de la tarde, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					3: escribir "Trabajo en el dia Lunes, trabajo en el horario noche";
+						noche <- noche + 1;
+						escribir "Trabajo en el dia Lunes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Lunes, en el horario de la noche Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Lunes, del horario de la noche, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+				FinSegun
+			
+			2:escribir "Trabajo en el dia Martes, ¿En que parte del dia vendio?";
+				escribir "-1 Mañana, -2 Tarde, -3 Noche...";
+				leer tipoMomento;
+				segun tipoMomento Hacer
+					1: escribir "Trabajo en el dia Martes, trabajo en el horario mañana";
+						maniana <- maniana + 1;
+						escribir "Trabajo en el dia Martes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Martes, en el horario de la mañana Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Martes, del horario de la mañana, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					2: escribir "Trabajo en el dia Martes, trabajo en el horario tarde";
+						tarde <- tarde + 1;
+						escribir "Trabajo en el dia Martes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Martes, en el horario de la tarde Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Martes, del horario de la tarde, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					3: escribir "Trabajo en el dia Martes, trabajo en el horario noche";
+						noche <- noche + 1;
+						escribir "Trabajo en el dia Martes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Martes, en el horario de la noche Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Martes, del horario de la noche, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+				FinSegun
+	
+			3:escribir "Trabajo en el dia Miercoles, ¿En que parte del dia vendio?";
+				escribir "-1 Mañana, -2 Tarde, -3 Noche...";
+				leer tipoMomento;
+				segun tipoMomento Hacer
+					1: escribir "Trabajo en el dia Miercoles, trabajo en el horario mañana";
+						maniana <- maniana + 1;
+						escribir "Trabajo en el dia Miercoles, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Miercoles, en el horario de la mañana Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Miercoles, del horario de la mañana, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					2: escribir "Trabajo en el dia Miercoles, trabajo en el horario tarde";
+						tarde <- tarde + 1;
+						escribir "Trabajo en el dia Miercoles, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Miercoles, en el horario de la tarde Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Miercoles, del horario de la tarde, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					3: escribir "Trabajo en el dia Miercoles, trabajo en el horario noche";
+						noche <- noche + 1;
+						escribir "Trabajo en el dia Miercoles, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Miercoles, en el horario de la noche Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Miercoles, del horario de la noche, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+				FinSegun
+			4:escribir "Trabajo en el dia Jueves, ¿En que parte del dia vendio?";
+				escribir "-1 Mañana, -2 Tarde, -3 Noche...";
+				leer tipoMomento;
+				segun tipoMomento Hacer
+					1: escribir "Trabajo en el dia Jueves, trabajo en el horario mañana";
+						maniana <- maniana + 1;
+						escribir "Trabajo en el dia Jueves, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Jueves, en el horario de la mañana Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Jueves, del horario de la mañana, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					2: escribir "Trabajo en el dia Jueves, trabajo en el horario tarde";
+						tarde <- tarde + 1;
+						escribir "Trabajo en el dia Jueves, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Jueves, en el horario de la tarde Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Jueves, del horario de la tarde, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					3: escribir "Trabajo en el dia Jueves, trabajo en el horario noche";
+						noche <- noche + 1;
+						escribir "Trabajo en el dia Jueves, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Jueves, en el horario de la noche Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Jueves, del horario de la noche, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+				FinSegun
+			5:escribir "Trabajo en el dia Viernes, ¿En que parte del dia vendio?";
+				escribir "-1 Mañana, -2 Tarde, -3 Noche...";
+				leer tipoMomento;
+				segun tipoMomento Hacer
+					1: escribir "Trabajo en el dia Viernes, trabajo en el horario mañana";
+						maniana <- maniana + 1;
+						escribir "Trabajo en el dia Viernes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Viernes, en el horario de la mañana Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Viernes, del horario de la mañana, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					2: escribir "Trabajo en el dia Viernes, trabajo en el horario tarde";
+						tarde <- tarde + 1;
+						escribir "Trabajo en el dia Viernes, en el horario mañana, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia viernes, en el horario de la tarde Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia viernes, del horario de la tarde, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+					3: escribir "Trabajo en el dia Lunes, trabajo en el horario noche";
+						noche <- noche + 1;
+						escribir "Trabajo en el dia viernes, en el horario noche, ¿Cuantos libros vendio?";
+						leer librosVendidos;
+						si librosVendidos > 0 Entonces
+							escribir "en el dia Lunes, en el horario de la noche Vendio un total de: ", librosVendidos, " Libros";
+							LibrosVendidosSumado <- LibrosVendidosSumado + librosVendidos;
+						sino 
+							escribir "en el dia Lunes, del horario de la noche, no se vendio nada";
+							CeroVendido <- CeroVendido + 1;
+						FinSi
+				FinSegun
+		FinSegun
+		escribir "¿Desea continuar? que sea asi, escriba el numero 1, sino, el -1";
+		leer carga;
+	FinMientras
+	Escribir "";
+	Escribir "";
+	Escribir "";
+	Escribir "";
+	Escribir "";
+	
+FinProceso
